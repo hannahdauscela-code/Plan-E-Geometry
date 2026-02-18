@@ -1,21 +1,18 @@
 .container {
-  background: linear-gradient(90deg, #4A90E2, #2E5C8A);
-}
-
-.button {
-  background-color: #4A90E2;
-  color: white;
+  background: linear-gradient(to right, #4A90E2, #2E5C8A);
+  color: #ffffff;
 }
 
 .header {
-  color: #2E5C8A;
+  background-color: #4A90E2;
+}
+
+.btn {
+  background-color: #5A9FD4;
+  border: none;
+  color: white;
 }
 
 .footer {
   background-color: #2E5C8A;
-  color: white;
-}
-
-.card {
-  border: 1px solid #4A90E2;
 }
