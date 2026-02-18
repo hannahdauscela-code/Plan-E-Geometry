@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan E Geometry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="container">
+                <header>
+                    <h1>Plan E Geometry</h1>
+                    <p class="subtitle">Explore the World of Plane Geometry</p>
+                </header>
+                
+                <main>
+                    <div class="search-container">
+                        <input 
+                            type="text" 
+                            id="searchBar" 
+                            class="search-bar" 
+                            placeholder="Search topics (e.g., 'area', 'congruence', 'distance')..."
+                            autocomplete="off"
+                        >
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('areaPerimeter')" class="nav-btn">Area & Perimeter</button>
+                    <button onclick="goToPage('propertiesShapes')" class="nav-btn">Properties of Shapes</button>
+                    <button onclick="goToPage('congruence')" class="nav-btn">Congruence</button>
+                    <button onclick="goToPage('similarity')" class="nav-btn">Similarity</button>
+                    <button onclick="goToPage('coordinateGeometry')" class="nav-btn">Coordinate Geometry</button>
+                    <button onclick="goToPage('members')" class="nav-btn">Members</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Area & Perimeter Page -->
+        <div id="areaPerimeter" class="page">
+            <div class="container">
+                <header>
+                    <h1>Area and Perimeter</h1>
+                </header>
+                
+                <main class="content">
+                    <section class="shape-section">
+                        <h2>Square</h2>
+                        <p><strong>Area</strong> = s²</p>
+                        <p><strong>Perimeter</strong> = 4s</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Rectangle</h2>
+                        <p><strong>Area</strong> = length × width</p>
+                        <p><strong>Perimeter</strong> = 2(length + width)</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Triangle</h2>
+                        <p><strong>Area</strong> = ½ × base × height</p>
+                        <p><strong>Perimeter</strong> = sum of all sides</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Circle</h2>
+                        <p><strong>Area</strong> = πr²</p>
+                        <p><strong>Circumference</strong> = 2πr</p>
+                    </section>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('home')" class="nav-btn back-btn">← Back to Home</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Properties of Shapes Page -->
+        <div id="propertiesShapes" class="page">
+            <div class="container">
+                <header>
+                    <h1>Properties of Shapes</h1>
+                </header>
+                
+                <main class="content">
+                    <section class="shape-section">
+                        <h2>Square</h2>
+                        <ul>
+                            <li>4 equal sides</li>
+                            <li>4 right angles</li>
+                            <li>Diagonals are equal</li>
+                        </ul>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Rectangle</h2>
+                        <ul>
+                            <li>Opposite sides equal</li>
+                            <li>4 right angles</li>
+                        </ul>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Triangle</h2>
+                        <ul>
+                            <li>Interior angles sum to 180°</li>
+                        </ul>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Circle</h2>
+                        <ul>
+                            <li>All points are equidistant from the center</li>
+                        </ul>
+                    </section>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('home')" class="nav-btn back-btn">← Back to Home</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Congruence Page -->
+        <div id="congruence" class="page">
+            <div class="container">
+                <header>
+                    <h1>Triangle Congruence</h1>
+                </header>
+                
+                <main class="content">
+                    <section class="shape-section">
+                        <h2>SSS (Side–Side–Side)</h2>
+                        <p>All three sides are equal</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>SAS (Side–Angle–Side)</h2>
+                        <p>Two sides and the included angle are equal</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>ASA (Angle–Side–Angle)</h2>
+                        <p>Two angles and the included side are equal</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>AAS (Angle–Angle–Side)</h2>
+                        <p>Two angles and a non-included side are equal</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>HL (Hypotenuse–Leg)</h2>
+                        <p>Hypotenuse and one leg are equal (right triangles only)</p>
+                    </section>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('home')" class="nav-btn back-btn">← Back to Home</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Similarity Page -->
+        <div id="similarity" class="page">
+            <div class="container">
+                <header>
+                    <h1>Similarity of Figures</h1>
+                </header>
+                
+                <main class="content">
+                    <section class="shape-section">
+                        <h2>AA Similarity</h2>
+                        <p>Two angles are equal</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>SAS Similarity</h2>
+                        <p>Two sides are proportional and the included angle is equal</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>SSS Similarity</h2>
+                        <p>All three sides are proportional</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Corresponding Sides</h2>
+                        <p>Corresponding sides are proportional</p>
+                    </section>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('home')" class="nav-btn back-btn">← Back to Home</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Coordinate Geometry Page -->
+        <div id="coordinateGeometry" class="page">
+            <div class="container">
+                <header>
+                    <h1>Coordinate Geometry</h1>
+                </header>
+                
+                <main class="content">
+                    <section class="shape-section">
+                        <h2>Distance Formula</h2>
+                        <p class="formula">√[(x₂ − x₁)² + (y₂ − y₁)²]</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Midpoint Formula</h2>
+                        <p class="formula">((x₁ + x₂)/2 , (y₁ + y₂)/2)</p>
+                    </section>
+
+                    <section class="shape-section">
+                        <h2>Slope Formula</h2>
+                        <p class="formula">(y₂ − y₁) / (x₂ − x₁)</p>
+                    </section>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('home')" class="nav-btn back-btn">← Back to Home</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Members Page -->
+        <div id="members" class="page">
+            <div class="container">
+                <header>
+                    <h1>Project Members</h1>
+                </header>
+                
+                <main class="content">
+                    <section class="members-section">
+                        <p>Hannah Gavril Cela</p>
+                    </section>
+
+                    <section class="members-section">
+                        <p>Joeril Marc De Guzman</p>
+                    </section>
+
+                    <section class="members-section">
+                        <p>Jethro Joaqui Seguin</p>
+                    </section>
+                </main>
+                
+                <nav class="navigation">
+                    <button onclick="goToPage('home')" class="nav-btn back-btn">← Back to Home</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
