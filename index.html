@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan E Geometry</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .nav { display: flex; justify-content: space-around; margin-bottom: 20px; }
+        .topic { margin: 20px 0; height: 100vh; }
+        #search { margin-bottom: 20px; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to Plan E Geometry</h1>
-        <p>Your description and content goes here.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Plan E Geometry. All rights reserved.</p>
-    </footer>
+    <h1>Welcome to Plan E Geometry</h1>
+    <input type="text" id="search" placeholder="Search for a topic..." />
+    <div class="nav">
+        <button onclick="document.getElementById('area').scrollIntoView()">Area & Perimeter</button>
+        <button onclick="document.getElementById('properties').scrollIntoView()">Properties of Shapes</button>
+        <button onclick="document.getElementById('congruence').scrollIntoView()">Congruence</button>
+        <button onclick="document.getElementById('similarity').scrollIntoView()">Similarity</button>
+        <button onclick="document.getElementById('coordinate').scrollIntoView()">Coordinate Geometry</button>
+        <button onclick="document.getElementById('members').scrollIntoView()">Members</button>
+    </div>
+    <div id="area" class="topic">
+        <h2>Area & Perimeter</h2>
+        <p>Content goes here...</p>
+    </div>
+    <div id="properties" class="topic">
+        <h2>Properties of Shapes</h2>
+        <p>Content goes here...</p>
+    </div>
+    <div id="congruence" class="topic">
+        <h2>Congruence</h2>
+        <p>Content goes here...</p>
+    </div>
+    <div id="similarity" class="topic">
+        <h2>Similarity</h2>
+        <p>Content goes here...</p>
+    </div>
+    <div id="coordinate" class="topic">
+        <h2>Coordinate Geometry</h2>
+        <p>Content goes here...</p>
+    </div>
+    <div id="members" class="topic">
+        <h2>Members</h2>
+        <p>Content goes here...</p>
+    </div>
 </body>
 </html>
